@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  taipy:
+    build: .
+    ports:
+      - "5000:5000"
+    container_name: comfyui_inobridge
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    restart: no
+    
