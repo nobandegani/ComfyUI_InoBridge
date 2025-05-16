@@ -7,6 +7,7 @@ EXPOSE 5000
 # Install your application
 WORKDIR /app
 COPY . /app
+
 RUN pip install -r requirements.txt
 
 # Start up command
