@@ -17,10 +17,14 @@ if __name__ == "__main__":
     with tgb.Page() as faceswap_page:
         tgb.text("# Face swap", mode="md")
 
+    with tgb.Page() as creator_generation_page:
+        tgb.text("# Creator generation", mode="md")
+
     pages = {
         "/": root_page,
         "menu": menu_page,
         "faceswap": faceswap_page,
+        "creator_generation": creator_generation_page
     }
 
     gui = Gui()
